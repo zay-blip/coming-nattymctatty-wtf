@@ -1,0 +1,126 @@
+{
+  "profile": {
+    "name": "Natty McTatty",
+    "handle": "@nattymctatty1981",
+    "bio": "Western Fashion \ud83e\udd20 Y2K \ud83c\udf52 Silly Mama \u2014 Goal: retire hubby \ud83d\ude0d",
+    "email": "NattyMcTatty1981@gmail.com",
+    "tiktok": "https://www.tiktok.com/@nattymctatty1981",
+    "avatar": "media/tiktok/hero-avatar.jpg",
+    "followers": "96.8K",
+    "likes": "1.6M"
+  },
+  "gallery": [
+    {
+      "id": "01-photo-landscape",
+      "type": "photo",
+      "src": "media/photos/01-photo-landscape.jpg",
+      "thumb": "media/photos/01-photo-landscape.jpg",
+      "caption": "From Natty GrokBot album \u2014 landscape",
+      "source": "photos"
+    },
+    {
+      "id": "02-video-portrait",
+      "type": "video",
+      "src": "media/photos/02-video-portrait.mp4",
+      "thumb": "media/photos/03-photo-portrait.jpg",
+      "caption": "From Natty GrokBot album \u2014 portrait video",
+      "source": "photos"
+    },
+    {
+      "id": "03-photo-portrait",
+      "type": "photo",
+      "src": "media/photos/03-photo-portrait.jpg",
+      "thumb": "media/photos/03-photo-portrait.jpg",
+      "caption": "From Natty GrokBot album \u2014 portrait",
+      "source": "photos"
+    },
+    {
+      "id": "04-video-portrait",
+      "type": "photo",
+      "src": "media/photos/03-photo-portrait.jpg",
+      "thumb": "media/photos/03-photo-portrait.jpg",
+      "caption": "Album clip (full MP4 lives in Desktop Natty-GrokBot-album \u2014 too large for Pages)",
+      "source": "photos"
+    },
+    {
+      "id": "20260916_7686130227868699935",
+      "type": "video",
+      "src": "media/tiktok/20260916_7686130227868699935.mp4",
+      "thumb": "media/tiktok/20260916_7686130227868699935.jpg",
+      "caption": "These jeans are so cute\u2026 I feel like Blossom herself!\ud83e\udd29 #jeansoutfit #jeans #outfit #outfitinspo #outfitideas",
+      "source": "tiktok"
+    },
+    {
+      "id": "20260916_7686152977916251423",
+      "type": "video",
+      "src": "media/tiktok/20260916_7686152977916251423.mp4",
+      "thumb": "media/tiktok/20260916_7686152977916251423.jpg",
+      "caption": "Camo Cargo Pants that are so dang cute and don\u2019t break the bank! Woohooo! #cargopants #camopants #camo #cargopantsoufit #outfit",
+      "source": "tiktok"
+    },
+    {
+      "id": "20260916_7686268864056823070",
+      "type": "video",
+      "src": "media/tiktok/20260916_7686268864056823070.mp4",
+      "thumb": "media/tiktok/20260916_7686268864056823070.jpg",
+      "caption": "This lace dress is so freaking cool!!!! Period! That\u2019s all! #concertoutfit #ootd #westernfashion #westernstyle #outfit",
+      "source": "tiktok"
+    },
+    {
+      "id": "20260917_7686511778829700383",
+      "type": "video",
+      "src": "media/tiktok/20260917_7686511778829700383.mp4",
+      "thumb": "media/tiktok/20260917_7686511778829700383.jpg",
+      "caption": "Dickies is always gonna have a special place in my heart! #dickies #workshirt #bluecollar #bluecollarboys #bluecollarlife",
+      "source": "tiktok"
+    },
+    {
+      "id": "20260917_7686542889136033054",
+      "type": "video",
+      "src": "media/tiktok/20260917_7686542889136033054.mp4",
+      "thumb": "media/tiktok/20260917_7686542889136033054.jpg",
+      "caption": "Wrangler Jeans are my favorite pair of jeans to walk away in! This pair of Wranglers is really one of my favorites because I love a trouser hem with a flare and the stretch in these make em fit like a glove! #wrangler #wranglerjeans #westernoutfits #westernfashion #ootd",
+      "source": "tiktok"
+    },
+    {
+      "id": "20260917_7686629504822807838",
+      "type": "video",
+      "src": "media/tiktok/20260917_7686629504822807838.mp4",
+      "thumb": "media/tiktok/20260917_7686629504822807838.jpg",
+      "caption": "Me in my natural element at my mamas house fresh off the day on the boat! I seriously love these sunglasses so much and I have a very pricey collection to choose from! #oversizedsunglasses #sunglasses #sunglass #sunnies #boatlife",
+      "source": "tiktok"
+    },
+    {
+      "id": "20260918_7686860178582408478",
+      "type": "video",
+      "src": "media/tiktok/20260918_7686860178582408478.mp4",
+      "thumb": "media/tiktok/20260918_7686860178582408478.jpg",
+      "caption": "Beach hair, wavy hair, air dried hair is my favorite hair and I literally go through so many cans of this stuff! I\u2019ve been using it about 3 years and i love it! #beachhair #wavyhair #wavyhairroutine #naturalhair #hairproducts",
+      "source": "tiktok"
+    },
+    {
+      "id": "20260918_7686906772786957598",
+      "type": "video",
+      "src": "media/tiktok/20260918_7686906772786957598.mp4",
+      "thumb": "media/tiktok/20260918_7686906772786957598.jpg",
+      "caption": "Hey Dude has been doin the dayum thang the last couple years with these Hey Dude Austin Lifts! These come in so many colors and they\u2019re all really freakn cute! #shoesforwomen #clogs #shoes #platformshoes #heydudeshoes @HeyDude",
+      "source": "tiktok"
+    },
+    {
+      "id": "20260918_7686960508968111391",
+      "type": "video",
+      "src": "media/tiktok/20260918_7686960508968111391.mp4",
+      "thumb": "media/tiktok/20260918_7686960508968111391.jpg",
+      "caption": "We love coming home! I\u2019m 7th generation Florida Native and my hubby is 11th! We are a rare breed all the way around!\ud83d\ude06 #fyp #foryoupage #floridalife #florida #ootd",
+      "source": "tiktok"
+    },
+    {
+      "id": "20260918_7687001029371514143",
+      "type": "video",
+      "src": "media/tiktok/20260918_7687001029371514143.mp4",
+      "thumb": "media/tiktok/20260918_7687001029371514143.jpg",
+      "caption": "Y2K Moto Jacket with the fur trim! I had this same jacket 25 years ago! I love this thing! #motostyle #bomberjacket #y2kaesthetic #y2kstyle #jacket @Dolls Kill",
+      "source": "tiktok"
+    }
+  ]
+}

@@ -1,72 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Coming soon</title>
-  <style>
-    :root { color-scheme: dark; }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      font-family: Georgia, "Times New Roman", serif;
-      background:
-        linear-gradient(180deg, rgba(10,14,28,.72), rgba(10,14,28,.88)),
-        repeating-linear-gradient(
-          180deg,
-          #b22234 0 7.69%,
-          #fff 7.69% 15.38%
-        );
-      color: #f5f7ff;
-      text-align: center;
-      padding: 2rem;
-    }
-    .card {
-      max-width: 28rem;
-      padding: 2.5rem 2rem;
-      border: 1px solid rgba(255,255,255,.18);
-      border-radius: 1.25rem;
-      background: rgba(8,12,24,.78);
-      backdrop-filter: blur(8px);
-      box-shadow: 0 20px 60px rgba(0,0,0,.35);
-    }
-    .flag {
-      font-size: 2.5rem;
-      line-height: 1;
-      margin-bottom: .75rem;
-    }
-    h1 {
-      font-size: clamp(1.8rem, 5vw, 2.4rem);
-      font-weight: 700;
-      letter-spacing: .04em;
-      margin-bottom: .6rem;
-    }
-    p {
-      font-family: system-ui, -apple-system, sans-serif;
-      font-size: .95rem;
-      opacity: .82;
-      line-height: 1.45;
-    }
-    .domain {
-      margin-top: 1.25rem;
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: .8rem;
-      opacity: .55;
-      letter-spacing: .02em;
-    }
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Natty McTatty — Western Fashion · Y2K · Silly Mama</title>
+<meta name="description" content="Natty McTatty — southern western country rockabilly. Western fashion, Y2K, tattoos, turquoise. Auction for her time coming soon."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#0c0908; --bg2:#16110e; --panel:#1c1511; --ink:#f3e8d8; --muted:#b9a48a;
+  --gold:#e2b44a; --turq:#2ec4b6; --rose:#c45c48; --line:rgba(226,180,74,.28);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:"IBM Plex Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.font-display{font-family:Outfit,system-ui,sans-serif}
+a{color:var(--turq);text-decoration:none} a:hover{color:var(--gold)}
+.wrap{width:min(1120px,92vw);margin:0 auto}
+.top{position:sticky;top:0;z-index:40;backdrop-filter:blur(10px);background:rgba(12,9,8,.86);border-bottom:1px solid var(--line)}
+.top-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0}
+.brand{font-family:Outfit,sans-serif;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.95rem;color:var(--gold)}
+.nav{display:flex;gap:.9rem;flex-wrap:wrap;font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.nav a{color:var(--muted)} .nav a:hover{color:var(--gold)}
+.hero{padding:3.5rem 0 2.5rem;background:
+  radial-gradient(ellipse at 20% 0%,rgba(46,196,182,.18),transparent 45%),
+  radial-gradient(ellipse at 80% 10%,rgba(226,180,74,.14),transparent 40%),
+  linear-gradient(180deg,var(--bg2),var(--bg));
+  border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:160px 1fr;gap:1.5rem;align-items:center}
+@media(min-width:720px){.hero-grid{grid-template-columns:220px 1fr;gap:2.25rem}}
+.avatar{width:100%;aspect-ratio:1;border-radius:50%;object-fit:cover;border:3px solid var(--gold);box-shadow:0 0 0 6px rgba(46,196,182,.2),0 18px 50px rgba(0,0,0,.55)}
+.kicker{font-family:Outfit,sans-serif;font-size:.72rem;font-weight:800;letter-spacing:.28em;text-transform:uppercase;color:var(--turq);margin:0 0 .4rem}
+h1{font-family:Outfit,sans-serif;font-size:clamp(2.2rem,6vw,4rem);font-weight:800;line-height:1.02;margin:0 0 .6rem;letter-spacing:.02em}
+.tag{font-size:clamp(1rem,2.4vw,1.2rem);color:var(--muted);max-width:36rem;margin:0 0 1.1rem}
+.stats{display:flex;gap:1rem;flex-wrap:wrap}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:.45rem .9rem;font-size:.85rem;font-weight:600}
+.stat b{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:.45rem;background:var(--gold);color:#1a1208;font-family:Outfit,sans-serif;font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:.78rem;border:0;border-radius:999px;padding:.75rem 1.15rem;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+.btn-row{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.1rem}
+section{padding:3rem 0;border-bottom:1px solid var(--line)}
+h2{font-family:Outfit,sans-serif;font-size:clamp(1.5rem,3vw,2rem);font-weight:800;margin:0 0 .35rem;letter-spacing:.04em}
+.sub{color:var(--muted);margin:0 0 1.4rem;max-width:40rem}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.85rem}
+@media(min-width:640px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:960px){.grid{grid-template-columns:repeat(4,1fr);gap:1rem}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;cursor:pointer;transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-3px);border-color:var(--gold)}
+.thumb{aspect-ratio:3/4;background:#000;position:relative;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.badge{position:absolute;top:.55rem;left:.55rem;background:rgba(0,0,0,.72);color:var(--gold);font-size:.65rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:.25rem .45rem;border-radius:6px}
+.play{position:absolute;inset:auto .55rem .55rem auto;width:2rem;height:2rem;border-radius:50%;background:var(--turq);color:#042;display:grid;place-items:center;font-size:.85rem;font-weight:900}
+.cap{padding:.7rem .75rem .9rem;font-size:.78rem;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:3.8em}
+.about-grid{display:grid;gap:1.25rem}
+@media(min-width:800px){.about-grid{grid-template-columns:1.2fr .8fr}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:1.25rem 1.35rem}
+.panel h3{font-family:Outfit,sans-serif;margin:0 0 .55rem;color:var(--gold);font-size:1rem;letter-spacing:.06em;text-transform:uppercase}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.85rem}
+.chip{border:1px solid var(--line);border-radius:999px;padding:.35rem .7rem;font-size:.75rem;color:var(--ink);background:rgba(226,180,74,.06)}
+.auction-grid{display:grid;gap:.85rem}
+@media(min-width:720px){.auction-grid{grid-template-columns:repeat(3,1fr)}}
+.auction{position:relative;overflow:hidden}
+.auction::after{content:"COMING SOON";position:absolute;top:1rem;right:-1.2rem;transform:rotate(18deg);background:var(--rose);color:#fff;font-family:Outfit,sans-serif;font-size:.65rem;font-weight:800;letter-spacing:.12em;padding:.35rem 1.6rem}
+.price{font-family:Outfit,sans-serif;color:var(--turq);font-weight:800;font-size:1.15rem;margin:.4rem 0}
+.contact{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.82rem;text-align:center}
+.stripe{height:8px;background:repeating-linear-gradient(135deg,var(--gold) 0 10px,#111 10px 20px)}
+#lightbox{display:none;position:fixed;inset:0;z-index:80;background:rgba(0,0,0,.88);padding:1rem;align-items:center;justify-content:center}
+#lightbox.open{display:flex}
+#lightbox .box{width:min(920px,96vw);max-height:92vh;background:var(--bg2);border:1px solid var(--line);border-radius:16px;overflow:auto;position:relative}
+#lightbox .close{position:absolute;top:.6rem;right:.7rem;z-index:2;background:rgba(0,0,0,.6);border:1px solid var(--line);color:var(--ink);border-radius:999px;width:2.2rem;height:2.2rem;cursor:pointer;font-size:1.1rem}
+#lightbox media-host,#lightbox .media-host{background:#000}
+#lightbox img,#lightbox video{display:block;width:100%;max-height:70vh;object-fit:contain;background:#000}
+#lightbox .lb-cap{padding:1rem 1.1rem 1.3rem;color:var(--muted);font-size:.9rem}
+</style>
 </head>
 <body>
-  <main class="card">
-    <div class="flag" aria-hidden="true">🇺🇸</div>
-    <h1>Coming soon</h1>
-    <p>Something’s cooking. Check back.</p>
-    <div class="domain" id="host"></div>
-  </main>
-  <script>
-    document.getElementById('host').textContent = location.hostname || '';
-  </script>
+<div class="stripe"></div>
+<header class="top"><div class="wrap top-inner">
+  <div class="brand">Natty McTatty</div>
+  <nav class="nav">
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#auction">Auction</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div></header>
+
+<section class="hero"><div class="wrap hero-grid">
+  <img class="avatar" src="media/tiktok/hero-avatar.jpg" alt="Natty McTatty"/>
+  <div>
+    <p class="kicker">Western · Rockabilly · Y2K</p>
+    <h1>Natty McTatty</h1>
+    <p class="tag">Western fashion. Y2K forever. Silly mama energy. Seventh-gen Florida native with turquoise, tattoos, and a goal to retire hubby.</p>
+    <div class="stats">
+      <div class="stat"><b>96.8K</b> followers</div>
+      <div class="stat"><b>1.6M</b> likes</div>
+      <div class="stat"><b>@nattymctatty1981</b></div>
+    </div>
+    <div class="btn-row">
+      <a class="btn" href="#gallery">Watch the grid</a>
+      <a class="btn ghost" href="https://www.tiktok.com/@nattymctatty1981" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <h2>Gallery</h2>
+  <p class="sub">TikTok cuts plus the Natty GrokBot album — tap any card to play.</p>
+  <div class="grid" id="gallery-grid"></div>
+</div></section>
+
+<section id="about"><div class="wrap about-grid">
+  <div class="panel">
+    <h3>Who she is</h3>
+    <p>Natty McTatty is western fashion with teeth — green eyes, sharp face, turquoise jewelry, and ink that doesn’t apologize. Right-shoulder rose. Sleeve details. Bicep, stomach, forearm. The look is southern country rockabilly badass, Y2K closet still winning, silly mama on a mission.</p>
+    <p style="margin-bottom:0;color:var(--muted)">Character lock for creators: asset <b style="color:var(--gold)">natalie_rebel</b> — keep tattoos asymmetrical (never flip), protect arms and abdomen in motion work, FaceID + OpenPose + Canny stack, ASUKA-II for color.</p>
+    <div class="chips">
+      <span class="chip">Western fashion</span>
+      <span class="chip">Y2K</span>
+      <span class="chip">Turquoise</span>
+      <span class="chip">Tattoos</span>
+      <span class="chip">Florida native</span>
+      <span class="chip">Silly mama</span>
+    </div>
+  </div>
+  <div class="panel">
+    <h3>Bio</h3>
+    <p style="font-size:1.05rem;margin:0 0 .8rem">Western Fashion 🤠 Y2K 🍒 Silly Mama<br/>Goal: retire hubby 😍</p>
+    <p style="margin:0;color:var(--muted)">Part of the MyAmerica.WTF family. Built with Outfit + IBM Plex Sans — same type stack as the mothership.</p>
+  </div>
+</div></section>
+
+<section id="auction"><div class="wrap">
+  <h2>Auction for Her Time</h2>
+  <p class="sub">UI shell only — real bidding lands later. For now, the vibe.</p>
+  <div class="auction-grid">
+    <div class="panel auction">
+      <h3>60-min video hang</h3>
+      <p class="price">Opens soon</p>
+      <p style="margin:0;color:var(--muted);font-size:.9rem">Private shoot energy. Western fit check + stories.</p>
+    </div>
+    <div class="panel auction">
+      <h3>Custom TikTok</h3>
+      <p class="price">Opens soon</p>
+      <p style="margin:0;color:var(--muted);font-size:.9rem">She wears it. She films it. Your brand or your chaos.</p>
+    </div>
+    <div class="panel auction">
+      <h3>Day-rate collab</h3>
+      <p class="price">Opens soon</p>
+      <p style="margin:0;color:var(--muted);font-size:.9rem">Full-day on-camera. Rockabilly badass, clocked in.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p class="sub">Bookings, collabs, and chaos.</p>
+  <div class="contact">
+    <a class="btn" href="mailto:NattyMcTatty1981@gmail.com">NattyMcTatty1981@gmail.com</a>
+    <a class="btn ghost" href="https://www.tiktok.com/@nattymctatty1981" target="_blank" rel="noopener">TikTok @nattymctatty1981</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  Natty McTatty · nattymctatty.wtf · MyAmerica family<br/>
+  Local preview reads media from this folder. Fonts: Outfit + IBM Plex Sans.
+</div></footer>
+
+<div id="lightbox" role="dialog" aria-modal="true">
+  <div class="box">
+    <button class="close" type="button" aria-label="Close">×</button>
+    <div class="media-host" id="lb-media"></div>
+    <div class="lb-cap" id="lb-cap"></div>
+  </div>
+</div>
+
+<script>
+async function boot(){
+  const res = await fetch('media/manifest.json');
+  const data = await res.json();
+  const grid = document.getElementById('gallery-grid');
+  data.gallery.forEach((item,i)=>{
+    const el = document.createElement('article');
+    el.className = 'card';
+    el.innerHTML = `
+      <div class="thumb">
+        <img src="${item.thumb || item.src}" alt="" loading="lazy"/>
+        <span class="badge">${item.source==='photos'?'Album':'TikTok'}</span>
+        ${item.type==='video'?'<span class="play">▶</span>':''}
+      </div>
+      <div class="cap">${item.caption || 'Natty McTatty'}</div>`;
+    el.addEventListener('click',()=>openLB(item));
+    grid.appendChild(el);
+  });
+}
+function openLB(item){
+  const lb = document.getElementById('lightbox');
+  const host = document.getElementById('lb-media');
+  const cap = document.getElementById('lb-cap');
+  host.innerHTML = '';
+  if(item.type==='video'){
+    const v = document.createElement('video');
+    v.src = item.src; v.controls = true; v.autoplay = true; v.playsInline = true;
+    host.appendChild(v);
+  } else {
+    const img = document.createElement('img');
+    img.src = item.src; img.alt = item.caption || '';
+    host.appendChild(img);
+  }
+  cap.textContent = item.caption || '';
+  lb.classList.add('open');
+}
+document.querySelector('#lightbox .close').onclick = ()=>{
+  const lb = document.getElementById('lightbox');
+  lb.classList.remove('open');
+  document.getElementById('lb-media').innerHTML = '';
+};
+document.getElementById('lightbox').addEventListener('click',e=>{
+  if(e.target.id==='lightbox') document.querySelector('#lightbox .close').click();
+});
+boot().catch(err=>{
+  document.getElementById('gallery-grid').innerHTML = '<p style="color:#c45c48">Could not load media/manifest.json — open this folder as a local site (or via a tiny static server).</p>';
+  console.error(err);
+});
+</script>
 </body>
 </html>
