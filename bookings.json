@@ -1,9 +1,9 @@
 {
-  "_how_to_edit": "Natty / Zay: change this file only. Leave price fields as $X until rates lock.",
-  "contact": "natalie@nattymctatty.wtf",
+  "_how_to_edit": "Natty / Zay: change slots and $X only. No public contact fields.",
+  "contact": "",
   "headline": "Time slots available",
-  "subhead": "Upcoming months. See calendar for details. No auction. No checkout on this page.",
-  "note": "Slots are a draft map. Natty fills real days after she and Zay talk schedule.",
+  "subhead": "Upcoming months. See calendar for details. No auction. No checkout. No public contact.",
+  "note": "Slots are a draft map.",
   "months_ahead": 4,
   "slots": [
     {"date": "2026-10-06", "status": "available", "label": "Open window", "notes": "Fill later"},
@@ -21,26 +21,16 @@
     {"date": "2027-01-05", "status": "available", "label": "Open window", "notes": ""}
   ],
   "rates": {
-    "video_minutes": {
-      "min": 1,
-      "max": 10,
-      "unit": "minute",
-      "price_each": "$X",
-      "blurb": "Room representation / brand representation. Slide minutes. Price stays $X until research lands."
-    },
+    "video_minutes": {"min": 1, "max": 10, "unit": "minute", "price_each": "$X", "blurb": "Room representation / brand representation."},
     "addons": [
-      {"id": "shoutout", "name": "Shoutout", "price": "$X", "blurb": "On-camera mention. Product or brand."},
-      {"id": "live", "name": "Live video", "price": "$X", "blurb": "Optional live add-on. Not auto-booked."}
+      {"id": "shoutout", "name": "Shoutout", "price": "$X", "blurb": "On-camera mention."},
+      {"id": "live", "name": "Live video", "price": "$X", "blurb": "Optional live add-on."}
     ],
     "weekly_videos": [
       {"count": 1, "name": "1 video / week", "price": "$X"},
       {"count": 2, "name": "2 videos / week", "price": "$X"},
       {"count": 3, "name": "3 videos / week", "price": "$X"}
     ],
-    "exclusive_week": {
-      "name": "Exclusive week",
-      "price": "$X",
-      "blurb": "One week. No other shoutouts. No other products."
-    }
+    "exclusive_week": {"name": "Exclusive week", "price": "$X", "blurb": "One week. No other shoutouts. No other products."}
   }
 }
