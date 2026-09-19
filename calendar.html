@@ -4,12 +4,12 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-<meta name="cache-bust" content="2026-09-19T22:03Z-strip"/>
+<meta name="cache-bust" content="2026-09-19T22:20Z-comps"/>
 <title>Booking Calendar — Natty McTatty</title>
 <meta name="theme-color" content="#050303"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{background:#050303}
+html,body{background:#050303;min-height:100%}
 .stage{position:relative;width:min(100vw,430px);margin:0 auto;background:#000;min-height:100vh}
 .stage img{display:block;width:100%;height:auto}
 .hot{position:absolute;z-index:2;display:block}
@@ -18,16 +18,16 @@ html,body{background:#050303}
 <body>
 <main class="stage">
 <img id="shot" alt="Natty McTatty booking calendar"/>
-<a class="hot" href="index.html" style="left:3%;top:1.0%;width:13%;height:2.5%" aria-label="Home"></a>
-<a class="hot" href="calendar.html" style="left:57%;top:1.0%;width:15%;height:2.5%" aria-label="Calendar"></a>
-<a class="hot" href="calendar.html" style="left:73%;top:0.8%;width:24%;height:2.9%" aria-label="Let's work together"></a>
+<a class="hot" href="index.html" style="left:2%;top:0.8%;width:12%;height:2.6%" aria-label="Home"></a>
+<a class="hot" href="calendar.html" style="left:56%;top:0.8%;width:14%;height:2.6%" aria-label="Calendar"></a>
+<a class="hot" href="calendar.html" style="left:72%;top:0.6%;width:25%;height:3.0%" aria-label="Let's work together"></a>
 </main>
 <script>
 function clean(s){return String(s).replace(/\s+/g,'')}
-Promise.all([
-fetch('media/mobile/calendar.0.txt').then(function(r){return r.text()}),
-fetch('media/mobile/calendar.1.txt').then(function(r){return r.text()})
-]).then(function(p){document.getElementById('shot').src='data:image/jpeg;base64,'+p.map(clean).join('');});
+var files=['media/mobile/calendar.0.txt','media/mobile/calendar.1.txt','media/mobile/calendar.2.txt','media/mobile/calendar.3.txt','media/mobile/calendar.4.txt','media/mobile/calendar.5.txt','media/mobile/calendar.6.txt'];
+Promise.all(files.map(function(u){return fetch(u+'?v=20260919c').then(function(r){if(!r.ok)throw new Error(u);return r.text();})}))
+.then(function(p){document.getElementById('shot').src='data:image/jpeg;base64,'+p.map(clean).join('');})
+.catch(function(){document.body.insertAdjacentHTML('beforeend','<p style="color:#fff;text-align:center;padding:2rem">Image failed to load. Hard refresh.</p>');});
 </script>
 </body>
 </html>
