@@ -2,11 +2,24 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta name="cache-bust" content="2026-09-19T00:39Z"/>
-<!-- deploy 2026-09-19T00:39Z -->
+<meta name="cache-bust" content="2026-09-19T03:02Z"/>
+<!-- deploy 2026-09-19T03:02Z -->
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Natty McTatty — Western Fashion · Y2K · Silly Mama</title>
 <meta name="description" content="Natty McTatty — southern western country rockabilly. Western fashion, Y2K, tattoos, turquoise. Auction for her time coming soon."/>
+<meta name="theme-color" content="#0c0908"/>
+<link rel="icon" type="image/jpeg" href="media/tiktok/hero-avatar.jpg"/>
+<link rel="apple-touch-icon" href="media/tiktok/hero-avatar.jpg"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://nattymctatty.wtf/"/>
+<meta property="og:title" content="Natty McTatty — Western Fashion · Y2K · Silly Mama"/>
+<meta property="og:description" content="Southern western country rockabilly. Western fashion, Y2K, tattoos, turquoise. Auction for her time coming soon."/>
+<meta property="og:image" content="https://nattymctatty.wtf/media/tiktok/hero-avatar.jpg"/>
+<meta property="og:site_name" content="Natty McTatty"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Natty McTatty — Western Fashion · Y2K · Silly Mama"/>
+<meta name="twitter:description" content="Southern western country rockabilly. Western fashion, Y2K, tattoos, turquoise. Auction for her time coming soon."/>
+<meta name="twitter:image" content="https://nattymctatty.wtf/media/tiktok/hero-avatar.jpg"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
@@ -22,7 +35,8 @@ a{color:var(--turq);text-decoration:none} a:hover{color:var(--gold)}
 .wrap{width:min(1120px,92vw);margin:0 auto}
 .top{position:sticky;top:0;z-index:40;backdrop-filter:blur(10px);background:rgba(12,9,8,.86);border-bottom:1px solid var(--line)}
 .top-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0}
-.brand{font-family:Outfit,sans-serif;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.95rem;color:var(--gold)}
+.brand{font-family:Outfit,sans-serif;font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:1rem;color:var(--gold);display:inline-flex;align-items:center;gap:.55rem;text-shadow:0 0 24px rgba(226,180,74,.35)}
+.brand-mark{width:1.35rem;height:1.35rem;border-radius:50%;object-fit:cover;border:2px solid var(--gold);box-shadow:0 0 0 3px rgba(46,196,182,.25)}
 .nav{display:flex;gap:.9rem;flex-wrap:wrap;font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
 .nav a{color:var(--muted)} .nav a:hover{color:var(--gold)}
 .hero{padding:3.5rem 0 2.5rem;background:
@@ -68,7 +82,7 @@ h2{font-family:Outfit,sans-serif;font-size:clamp(1.5rem,3vw,2rem);font-weight:80
 .price{font-family:Outfit,sans-serif;color:var(--turq);font-weight:800;font-size:1.15rem;margin:.4rem 0}
 .contact{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
 footer{padding:2rem 0 3rem;color:var(--muted);font-size:.82rem;text-align:center}
-.stripe{height:8px;background:repeating-linear-gradient(135deg,var(--gold) 0 10px,#111 10px 20px)}
+.stripe{height:10px;background:repeating-linear-gradient(135deg,var(--gold) 0 12px,#111 12px 24px);box-shadow:0 2px 12px rgba(226,180,74,.2)}
 #lightbox{display:none;position:fixed;inset:0;z-index:80;background:rgba(0,0,0,.88);padding:1rem;align-items:center;justify-content:center}
 #lightbox.open{display:flex}
 #lightbox .box{width:min(920px,96vw);max-height:92vh;background:var(--bg2);border:1px solid var(--line);border-radius:16px;overflow:auto;position:relative}
@@ -79,10 +93,10 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.82rem;text-align:center
 </style>
 </head>
 <body>
-<div class="stripe"></div>
+<div class="stripe" aria-hidden="true"></div>
 <header class="top"><div class="wrap top-inner">
-  <div class="brand">Natty McTatty</div>
-  <nav class="nav">
+  <div class="brand"><img class="brand-mark" src="media/tiktok/hero-avatar.jpg" alt="" width="22" height="22"/>Natty McTatty</div>
+  <nav class="nav" aria-label="Primary">
     <a href="#gallery">Gallery</a>
     <a href="#about">About</a>
     <a href="#auction">Auction</a>
@@ -91,7 +105,7 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.82rem;text-align:center
 </div></header>
 
 <section class="hero"><div class="wrap hero-grid">
-  <img class="avatar" src="media/tiktok/hero-avatar.jpg" alt="Natty McTatty"/>
+  <img class="avatar" src="media/tiktok/hero-avatar.jpg" alt="Natty McTatty" width="220" height="220"/>
   <div>
     <p class="kicker">Western · Rockabilly · Y2K</p>
     <h1>Natty McTatty</h1>
@@ -110,20 +124,21 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.82rem;text-align:center
 
 <section id="gallery"><div class="wrap">
   <h2>Gallery</h2>
-  <p class="sub">TikTok cuts plus the Natty GrokBot album — tap any card to play.</p>
+  <p class="sub">TikTok cuts plus the Natty GrokBot album — tap any card to open the lightbox.</p>
   <div class="grid" id="gallery-grid"></div>
 </div></section>
 
 <section id="about"><div class="wrap about-grid">
   <div class="panel">
     <h3>Who she is</h3>
-    <p>Natty McTatty is western fashion with teeth — green eyes, sharp face, turquoise jewelry, and ink that doesn’t apologize. Right-shoulder rose. Sleeve details. Bicep, stomach, forearm. The look is southern country rockabilly badass, Y2K closet still winning, silly mama on a mission.</p>
-    <p style="margin-bottom:0;color:var(--muted)">Character lock for creators: asset <b style="color:var(--gold)">natalie_rebel</b> — keep tattoos asymmetrical (never flip), protect arms and abdomen in motion work, FaceID + OpenPose + Canny stack, ASUKA-II for color.</p>
+    <p>Natty McTatty is western fashion with teeth — <b style="color:var(--gold)">green eyes</b>, sharp face, turquoise jewelry, and ink that doesn’t apologize. Signature <b style="color:var(--gold)">right-shoulder rose</b>. Sleeve details. Bicep, stomach, forearm. The look is southern country rockabilly badass, Y2K closet still winning, silly mama on a mission.</p>
+    <p style="margin-bottom:0;color:var(--muted)">Creator lock: asset <b style="color:var(--gold)">natalie_rebel</b> — tattoos stay asymmetrical (never flip), protect arms and abdomen in motion work. FaceID + OpenPose + Canny stack; ASUKA-II for color.</p>
     <div class="chips">
       <span class="chip">Western fashion</span>
       <span class="chip">Y2K</span>
       <span class="chip">Turquoise</span>
-      <span class="chip">Tattoos</span>
+      <span class="chip">Right-shoulder rose</span>
+      <span class="chip">Green eyes</span>
       <span class="chip">Florida native</span>
       <span class="chip">Silly mama</span>
     </div>
@@ -168,7 +183,7 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.82rem;text-align:center
 
 <footer><div class="wrap">
   Natty McTatty · nattymctatty.wtf · MyAmerica family<br/>
-  Local preview reads media from this folder. Fonts: Outfit + IBM Plex Sans.
+  Fonts: Outfit + IBM Plex Sans.
 </div></footer>
 
 <div id="lightbox" role="dialog" aria-modal="true">
