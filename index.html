@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-<meta name="cache-bust" content="2026-09-19T22:20Z-comps"/>
+<meta name="cache-bust" content="2026-09-19T22:45Z-img"/>
 <title>Natty McTatty — nattymctatty.wtf</title>
 <meta name="theme-color" content="#050303"/>
 <style>
@@ -17,18 +17,11 @@ html,body{background:#050303;min-height:100%}
 </head>
 <body>
 <main class="stage">
-<img id="shot" alt="Natty McTatty home"/>
+<img src="media/mobile/front.jpg?v=20260919d" alt="Natty McTatty home"/>
 <a class="hot" href="index.html" style="left:2%;top:18.6%;width:10%;height:2.4%" aria-label="Home"></a>
 <a class="hot" href="calendar.html" style="left:61%;top:18.6%;width:12%;height:2.4%" aria-label="Calendar"></a>
 <a class="hot" href="calendar.html" style="left:74%;top:18.3%;width:23%;height:2.8%" aria-label="Let's work together"></a>
 <a class="hot" href="calendar.html" style="left:23%;top:81.8%;width:54%;height:5.8%" aria-label="See calendar"></a>
 </main>
-<script>
-function clean(s){return String(s).replace(/\s+/g,'')}
-var files=['media/mobile/front.0.txt','media/mobile/front.1.txt','media/mobile/front.2.txt','media/mobile/front.3.txt','media/mobile/front.4.txt','media/mobile/front.5.txt','media/mobile/front.6.txt'];
-Promise.all(files.map(function(u){return fetch(u+'?v=20260919c').then(function(r){if(!r.ok)throw new Error(u);return r.text();})}))
-.then(function(p){document.getElementById('shot').src='data:image/jpeg;base64,'+p.map(clean).join('');})
-.catch(function(){document.body.insertAdjacentHTML('beforeend','<p style="color:#fff;text-align:center;padding:2rem">Image failed to load. Hard refresh.</p>');});
-</script>
 </body>
 </html>
