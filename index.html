@@ -2,216 +2,26 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-<meta http-equiv="Pragma" content="no-cache"/>
-<meta http-equiv="Expires" content="0"/>
-<meta name="cache-bust" content="2026-09-19T21:10Z-bigbot-force"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="cache-bust" content="2026-09-19T21:50Z-comps-up"/>
 <title>Natty McTatty — nattymctatty.wtf</title>
-<meta name="description" content="Official Natty McTatty site: gallery, about, and booking calendar at nattymctatty.wtf. Not a TikTok page."/>
-<meta name="theme-color" content="#0c0908"/>
-<link rel="icon" type="image/jpeg" href="media/tiktok/hero-avatar.jpg"/>
-<meta property="og:url" content="https://nattymctatty.wtf/"/>
-<meta property="og:title" content="Natty McTatty — nattymctatty.wtf"/>
-<meta property="og:description" content="Official Natty McTatty website: gallery, about, and booking calendar."/>
-<meta property="og:image" content="https://nattymctatty.wtf/media/tiktok/hero-avatar.jpg"/>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<meta name="theme-color" content="#050303"/>
 <style>
-:root{--bg:#0c0908;--bg2:#16110e;--panel:#1c1511;--ink:#f3e8d8;--muted:#b9a48a;--gold:#e2b44a;--turq:#2ec4b6;--rose:#c45c48;--line:rgba(226,180,74,.28)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:"IBM Plex Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
-a{color:var(--turq);text-decoration:none}a:hover{color:var(--gold)}
-.wrap{width:min(1120px,92vw);margin:0 auto}
-.livebar{background:#2ec4b6;color:#042;text-align:center;font-family:Outfit,sans-serif;font-weight:800;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:.45rem .75rem}
-.top{position:sticky;top:0;z-index:40;backdrop-filter:blur(10px);background:rgba(12,9,8,.86);border-bottom:1px solid var(--line)}
-.top-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0}
-.brand{font-family:Outfit,sans-serif;font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:1rem;color:var(--gold);display:inline-flex;align-items:center;gap:.55rem}
-.brand-mark{width:1.35rem;height:1.35rem;border-radius:50%;object-fit:cover;border:2px solid var(--gold)}
-.nav{display:flex;gap:.9rem;flex-wrap:wrap;font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
-.nav a{color:var(--muted)}.nav a:hover{color:var(--gold)}
-.hero{padding:3.5rem 0 2.5rem;background:radial-gradient(ellipse at 20% 0%,rgba(46,196,182,.18),transparent 45%),linear-gradient(180deg,var(--bg2),var(--bg));border-bottom:1px solid var(--line)}
-.hero-grid{display:grid;grid-template-columns:160px 1fr;gap:1.5rem;align-items:center}
-@media(min-width:720px){.hero-grid{grid-template-columns:220px 1fr;gap:2.25rem}}
-.avatar{width:100%;aspect-ratio:1;border-radius:50%;object-fit:cover;border:3px solid var(--gold)}
-.kicker{font-family:Outfit,sans-serif;font-size:.72rem;font-weight:800;letter-spacing:.28em;text-transform:uppercase;color:var(--turq);margin:0 0 .4rem}
-h1{font-family:Outfit,sans-serif;font-size:clamp(2.2rem,6vw,4rem);font-weight:800;line-height:1.02;margin:0 0 .6rem}
-.tag{font-size:clamp(1rem,2.4vw,1.2rem);color:var(--muted);max-width:36rem;margin:0 0 1.1rem}
-.stats{display:flex;gap:1rem;flex-wrap:wrap}
-.stat{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:.45rem .9rem;font-size:.85rem;font-weight:600}
-.stat b{color:var(--gold)}
-.btn{display:inline-flex;align-items:center;background:var(--gold);color:#1a1208;font-family:Outfit,sans-serif;font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:.78rem;border:0;border-radius:999px;padding:.75rem 1.15rem}
-.btn.ghost{background:transparent;color:var(--gold);border:1px solid var(--gold)}
-.btn-row{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.1rem}
-section{padding:3rem 0;border-bottom:1px solid var(--line)}
-h2{font-family:Outfit,sans-serif;font-size:clamp(1.5rem,3vw,2rem);font-weight:800;margin:0 0 .35rem}
-.sub{color:var(--muted);margin:0 0 1.4rem;max-width:40rem}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.85rem}
-@media(min-width:640px){.grid{grid-template-columns:repeat(3,1fr)}}
-@media(min-width:960px){.grid{grid-template-columns:repeat(4,1fr);gap:1rem}}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;cursor:pointer}
-.thumb{aspect-ratio:3/4;background:#000;position:relative;overflow:hidden}
-.thumb img{width:100%;height:100%;object-fit:cover;display:block}
-.badge{position:absolute;top:.55rem;left:.55rem;background:rgba(0,0,0,.72);color:var(--gold);font-size:.65rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:.25rem .45rem;border-radius:6px}
-.play{position:absolute;inset:auto .55rem .55rem auto;width:2rem;height:2rem;border-radius:50%;background:var(--turq);color:#042;display:grid;place-items:center;font-weight:900}
-.cap{padding:.7rem .75rem .9rem;font-size:.78rem;color:var(--muted)}
-.about-grid{display:grid;gap:1.25rem}
-@media(min-width:800px){.about-grid{grid-template-columns:1.2fr .8fr}}
-.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:1.25rem 1.35rem}
-.panel h3{font-family:Outfit,sans-serif;margin:0 0 .55rem;color:var(--gold);font-size:1rem;letter-spacing:.06em;text-transform:uppercase}
-.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.85rem}
-.chip{border:1px solid var(--line);border-radius:999px;padding:.35rem .7rem;font-size:.75rem}
-.book-grid{display:grid;gap:1.1rem}
-@media(min-width:900px){.book-grid{grid-template-columns:1.15fr .85fr;align-items:start}}
-.cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:.85rem}
-.cal-head h3{margin:0}
-.cal-nav button{background:transparent;border:1px solid var(--line);color:var(--gold);border-radius:999px;width:2.1rem;height:2.1rem;cursor:pointer;font-weight:800}
-.cal-week,.cal-days{display:grid;grid-template-columns:repeat(7,1fr);gap:.3rem}
-.cal-week{margin-bottom:.35rem;color:var(--muted);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-align:center}
-.day{min-height:3.3rem;border:1px solid var(--line);border-radius:10px;padding:.3rem .25rem;background:#120e0c;font-size:.78rem}
-.day.empty{border-color:transparent;background:transparent}
-.day.available{border-color:rgba(46,196,182,.55);background:rgba(46,196,182,.08);cursor:pointer}
-.day.hold{border-color:rgba(226,180,74,.5);background:rgba(226,180,74,.08);cursor:pointer}
-.day.booked{border-color:rgba(196,92,72,.45);background:rgba(196,92,72,.1)}
-.day .mark{display:block;font-size:.62rem;color:var(--muted)}
-.legend{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:.8rem;font-size:.75rem;color:var(--muted)}
-.dot{width:.65rem;height:.65rem;border-radius:50%;display:inline-block;margin-right:.3rem}
-.price{font-family:Outfit,sans-serif;color:var(--turq);font-weight:800;font-size:1.15rem;margin:.4rem 0}
-.rate-row{display:flex;justify-content:space-between;gap:.7rem;border-bottom:1px solid var(--line);padding:.55rem 0}
-input[type=range]{width:100%;accent-color:var(--gold)}
-.tiny{color:var(--muted);font-size:.82rem;margin:0}
-footer{padding:2rem 0 3rem;color:var(--muted);font-size:.82rem;text-align:center}
-.stripe{height:10px;background:repeating-linear-gradient(135deg,var(--gold) 0 12px,#111 12px 24px)}
-#lightbox{display:none;position:fixed;inset:0;z-index:80;background:rgba(0,0,0,.88);padding:1rem;align-items:center;justify-content:center}
-#lightbox.open{display:flex}
-#lightbox .box{width:min(920px,96vw);max-height:92vh;background:var(--bg2);border:1px solid var(--line);border-radius:16px;overflow:auto;position:relative}
-#lightbox .close{position:absolute;top:.6rem;right:.7rem;background:rgba(0,0,0,.6);border:1px solid var(--line);color:var(--ink);border-radius:999px;width:2.2rem;height:2.2rem;cursor:pointer}
-#lightbox img,#lightbox video{display:block;width:100%;max-height:70vh;object-fit:contain;background:#000}
-#lightbox .lb-cap{padding:1rem;color:var(--muted)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#050303}
+.stage{position:relative;width:min(100vw,430px);margin:0 auto;background:#000}
+.stage img{display:block;width:100%;height:auto}
+.hot{position:absolute;z-index:2;display:block}
 </style>
 </head>
 <body>
-<div class="livebar">LIVE SITE · nattymctatty.wtf · build 2026-09-19T21:10Z</div>
-<div class="stripe" aria-hidden="true"></div>
-<header class="top"><div class="wrap top-inner">
-  <div class="brand"><img class="brand-mark" src="media/tiktok/hero-avatar.jpg" alt="" width="22" height="22"/>Natty McTatty</div>
-  <nav class="nav" aria-label="Primary">
-    <a href="#gallery">Gallery</a>
-    <a href="#about">About</a>
-    <a href="#book">Book</a>
-  </nav>
-</div></header>
-<section class="hero"><div class="wrap hero-grid">
-  <img class="avatar" src="media/tiktok/hero-avatar.jpg" alt="Natty McTatty" width="220" height="220"/>
-  <div>
-    <p class="kicker">Western · Rockabilly · Y2K</p>
-    <h1>Natty McTatty</h1>
-    <p class="tag">Western fashion. Y2K forever. Silly mama energy. Seventh-gen Florida native with turquoise, tattoos, and a goal to retire hubby.</p>
-    <div class="stats">
-      <div class="stat"><b>96.8K</b> followers</div>
-      <div class="stat"><b>1.6M</b> likes</div>
-    </div>
-    <div class="btn-row">
-      <a class="btn" href="#gallery">Watch the grid</a>
-      <a class="btn ghost" href="#book">See calendar</a>
-    </div>
-  </div>
-</div></section>
-<section id="gallery"><div class="wrap">
-  <h2>Gallery</h2>
-  <p class="sub">Tap a card to open it.</p>
-  <div class="grid" id="gallery-grid"></div>
-</div></section>
-<section id="about"><div class="wrap about-grid">
-  <div class="panel">
-    <h3>Who she is</h3>
-    <p>Natty McTatty is western fashion with teeth. Green eyes. Turquoise. Right-shoulder rose.</p>
-    <div class="chips"><span class="chip">Western fashion</span><span class="chip">Y2K</span><span class="chip">Turquoise</span><span class="chip">Florida native</span><span class="chip">Silly mama</span></div>
-  </div>
-  <div class="panel">
-    <h3>Bio</h3>
-    <p>Western Fashion. Y2K. Silly Mama. Goal: retire hubby.</p>
-  </div>
-</div></section>
-<section id="book"><div class="wrap">
-  <h2>Book her time</h2>
-  <p class="sub" id="book-sub">Upcoming months. See calendar for details. No public contact on this page.</p>
-  <div class="book-grid">
-    <div class="panel">
-      <div class="cal-head"><h3 id="cal-title">Calendar</h3><div class="cal-nav"><button type="button" id="cal-prev">‹</button><button type="button" id="cal-next">›</button></div></div>
-      <div class="cal-week"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
-      <div class="cal-days" id="cal-days"></div>
-      <div class="legend"><span><i class="dot" style="background:#2ec4b6"></i>Available</span><span><i class="dot" style="background:#e2b44a"></i>Hold</span><span><i class="dot" style="background:#c45c48"></i>Off</span></div>
-      <p class="tiny" id="cal-detail" style="margin-top:.9rem">Tap a marked day.</p>
-    </div>
-    <div class="panel">
-      <h3>Video timing</h3>
-      <p class="tiny">Room representation / brand representation.</p>
-      <input type="range" id="min-range" min="1" max="10" value="1"/>
-      <p class="price" id="min-readout">1 minute — $X</p>
-      <h3>Add-ons</h3><div id="addons"></div>
-      <h3>Weekly videos</h3><div id="weekly"></div>
-      <div class="rate-row" id="exclusive-row"><div><strong>Exclusive week</strong></div><div class="price" style="margin:0">$X</div></div>
-      <p class="tiny" style="margin-top:.9rem">No pay button. No public contact.</p>
-    </div>
-  </div>
-</div></section>
-<footer><div class="wrap">Natty McTatty · nattymctatty.wtf · build 2026-09-19T21:10Z</div></footer>
-<div id="lightbox"><div class="box"><button class="close" type="button">×</button><div class="media-host" id="lb-media"></div><div class="lb-cap" id="lb-cap"></div></div></div>
-<script>
-let BOOK=null;let view=new Date(2026,9,1);
-async function boot(){
-  const data=await (await fetch('media/manifest.json')).json();
-  const grid=document.getElementById('gallery-grid');
-  data.gallery.forEach(item=>{
-    const el=document.createElement('article');el.className='card';
-    el.innerHTML='<div class="thumb"><img src="'+(item.thumb||item.src)+'" alt="" loading="lazy"/><span class="badge">Clip</span>'+(item.type==='video'?'<span class="play">\u25b6</span>':'')+'</div><div class="cap">'+(item.caption||'')+'</div>';
-    el.onclick=()=>openLB(item);grid.appendChild(el);
-  });
-  try{BOOK=await (await fetch('bookings.json')).json()}catch(e){BOOK={slots:[],rates:{video_minutes:{min:1,max:10,price_each:'$X'},addons:[],weekly_videos:[],exclusive_week:{name:'Exclusive week',price:'$X'}}}}
-  paintBook();
-}
-function openLB(item){
-  const host=document.getElementById('lb-media');host.innerHTML='';
-  if(item.type==='video'){const v=document.createElement('video');v.src=item.src;v.controls=true;v.autoplay=true;v.playsInline=true;host.appendChild(v)}
-  else{const img=document.createElement('img');img.src=item.src;host.appendChild(img)}
-  document.getElementById('lb-cap').textContent=item.caption||'';
-  document.getElementById('lightbox').classList.add('open');
-}
-document.querySelector('#lightbox .close').onclick=()=>{document.getElementById('lightbox').classList.remove('open');document.getElementById('lb-media').innerHTML=''};
-function ymd(d){const z=n=>String(n).padStart(2,'0');return d.getFullYear()+'-'+z(d.getMonth()+1)+'-'+z(d.getDate())}
-function paintCal(){
-  document.getElementById('cal-title').textContent=view.toLocaleString('en-US',{month:'long',year:'numeric'});
-  const first=new Date(view.getFullYear(),view.getMonth(),1);
-  const startPad=first.getDay();
-  const daysIn=new Date(view.getFullYear(),view.getMonth()+1,0).getDate();
-  const host=document.getElementById('cal-days');host.innerHTML='';
-  const map={};(BOOK.slots||[]).forEach(s=>map[s.date]=s);
-  for(let i=0;i<startPad;i++){const e=document.createElement('div');e.className='day empty';host.appendChild(e)}
-  for(let d=1;d<=daysIn;d++){
-    const key=ymd(new Date(view.getFullYear(),view.getMonth(),d));
-    const slot=map[key];
-    const el=document.createElement('button');el.type='button';el.className='day'+(slot?' '+slot.status:'');
-    el.innerHTML='<span class="n">'+d+'</span>'+(slot?'<span class="mark">'+(slot.label||slot.status)+'</span>':'');
-    if(slot)el.onclick=()=>{document.getElementById('cal-detail').textContent=key+' \u00b7 '+(slot.label||slot.status)};
-    host.appendChild(el);
-  }
-}
-function paintRates(){
-  const r=BOOK.rates||{};const vm=r.video_minutes||{min:1,max:10,price_each:'$X'};
-  const range=document.getElementById('min-range');
-  const paintMin=()=>{const n=Number(range.value);document.getElementById('min-readout').textContent=n+' minute'+(n===1?'':'s')+' \u2014 '+(vm.price_each||'$X')};
-  range.oninput=paintMin;paintMin();
-  const addons=document.getElementById('addons');addons.innerHTML='';
-  (r.addons||[]).forEach(a=>{const row=document.createElement('div');row.className='rate-row';row.innerHTML='<div><strong>'+a.name+'</strong></div><div class="price" style="margin:0">'+(a.price||'$X')+'</div>';addons.appendChild(row)});
-  const weekly=document.getElementById('weekly');weekly.innerHTML='';
-  (r.weekly_videos||[]).forEach(w=>{const row=document.createElement('div');row.className='rate-row';row.innerHTML='<div><strong>'+w.name+'</strong></div><div class="price" style="margin:0">'+(w.price||'$X')+'</div>';weekly.appendChild(row)});
-  const ex=r.exclusive_week||{};document.getElementById('exclusive-row').innerHTML='<div><strong>'+(ex.name||'Exclusive week')+'</strong></div><div class="price" style="margin:0">'+(ex.price||'$X')+'</div>';
-  if(BOOK.subhead)document.getElementById('book-sub').textContent=BOOK.subhead;
-}
-function paintBook(){paintCal();paintRates()}
-document.getElementById('cal-prev').onclick=()=>{view=new Date(view.getFullYear(),view.getMonth()-1,1);paintCal()};
-document.getElementById('cal-next').onclick=()=>{view=new Date(view.getFullYear(),view.getMonth()+1,1);paintCal()};
-boot();
-</script>
+<main class="stage">
+<img src="media/mobile/front.jpg" alt="Natty McTatty home"/>
+<a class="hot" href="index.html" style="left:2%;top:18.6%;width:10%;height:2.3%" aria-label="Home"></a>
+<a class="hot" href="calendar.html" style="left:61%;top:18.6%;width:12%;height:2.3%" aria-label="Calendar"></a>
+<a class="hot" href="calendar.html" style="left:74%;top:18.3%;width:23%;height:2.7%" aria-label="Let's work together"></a>
+<a class="hot" href="calendar.html" style="left:23%;top:82.1%;width:54%;height:5.6%" aria-label="See calendar"></a>
+</main>
 </body>
 </html>
