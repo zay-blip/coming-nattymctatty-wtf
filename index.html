@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-<meta name="cache-bust" content="2026-09-19T21:52Z-comps-live"/>
+<meta name="cache-bust" content="2026-09-19T21:54Z-two-chunk"/>
 <title>Natty McTatty — nattymctatty.wtf</title>
 <meta name="theme-color" content="#050303"/>
 <style>
@@ -17,7 +17,7 @@ html,body{background:#050303}
 </head>
 <body>
 <main class="stage">
-<img id="shot" alt="Natty McTatty — nattymctatty.wtf"/>
+<img id="shot" alt="Natty McTatty home"/>
 <a class="hot" href="index.html" style="left:2%;top:18.6%;width:10%;height:2.3%" aria-label="Home"></a>
 <a class="hot" href="calendar.html" style="left:61%;top:18.6%;width:12%;height:2.3%" aria-label="Calendar"></a>
 <a class="hot" href="calendar.html" style="left:74%;top:18.3%;width:23%;height:2.7%" aria-label="Let's work together"></a>
@@ -26,11 +26,8 @@ html,body{background:#050303}
 <script>
 Promise.all([
 fetch('media/mobile/front.0.txt').then(r=>r.text()),
-fetch('media/mobile/front.1.txt').then(r=>r.text()),
-fetch('media/mobile/front.2.txt').then(r=>r.text()),
-fetch('media/mobile/front.3.txt').then(r=>r.text()),
-fetch('media/mobile/front.4.txt').then(r=>r.text())
-]).then(function(p){document.getElementById('shot').src='data:image/jpeg;base64,'+p.join('');}).catch(function(){document.getElementById('shot').alt='image failed to load';});
+fetch('media/mobile/front.1.txt').then(r=>r.text())
+]).then(function(p){document.getElementById('shot').src='data:image/jpeg;base64,'+p.join('');});
 </script>
 </body>
 </html>
