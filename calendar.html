@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-<meta name="cache-bust" content="2026-09-19T21:54Z-two-chunk"/>
+<meta name="cache-bust" content="2026-09-19T22:03Z-strip"/>
 <title>Booking Calendar — Natty McTatty</title>
 <meta name="theme-color" content="#050303"/>
 <style>
@@ -23,10 +23,11 @@ html,body{background:#050303}
 <a class="hot" href="calendar.html" style="left:73%;top:0.8%;width:24%;height:2.9%" aria-label="Let's work together"></a>
 </main>
 <script>
+function clean(s){return String(s).replace(/\s+/g,'')}
 Promise.all([
-fetch('media/mobile/calendar.0.txt').then(r=>r.text()),
-fetch('media/mobile/calendar.1.txt').then(r=>r.text())
-]).then(function(p){document.getElementById('shot').src='data:image/jpeg;base64,'+p.join('');});
+fetch('media/mobile/calendar.0.txt').then(function(r){return r.text()}),
+fetch('media/mobile/calendar.1.txt').then(function(r){return r.text()})
+]).then(function(p){document.getElementById('shot').src='data:image/jpeg;base64,'+p.map(clean).join('');});
 </script>
 </body>
 </html>
