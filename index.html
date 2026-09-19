@@ -2,23 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta name="cache-bust" content="2026-09-19T03:53Z"/>
-<!-- deploy restore 2026-09-19T03:53Z -->
+<meta name="cache-bust" content="2026-09-19T12:50Z"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Natty McTatty — Western Fashion · Y2K · Silly Mama</title>
-<meta name="description" content="Natty McTatty — southern western country rockabilly. Western fashion, Y2K, tattoos, turquoise. Auction for her time coming soon."/>
+<meta name="description" content="Natty McTatty — southern western country rockabilly. Time slots on the calendar. Rates marked $X until Natty and Zay lock numbers."/>
 <meta name="theme-color" content="#0c0908"/>
 <link rel="icon" type="image/jpeg" href="media/tiktok/hero-avatar.jpg"/>
 <link rel="apple-touch-icon" href="media/tiktok/hero-avatar.jpg"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://nattymctatty.wtf/"/>
 <meta property="og:title" content="Natty McTatty — Western Fashion · Y2K · Silly Mama"/>
-<meta property="og:description" content="Southern western country rockabilly. Western fashion, Y2K, tattoos, turquoise. Auction for her time coming soon."/>
+<meta property="og:description" content="Southern western country rockabilly. Calendar for time slots. Rates stay $X until locked."/>
 <meta property="og:image" content="https://nattymctatty.wtf/media/tiktok/hero-avatar.jpg"/>
 <meta property="og:site_name" content="Natty McTatty"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Natty McTatty — Western Fashion · Y2K · Silly Mama"/>
-<meta name="twitter:description" content="Southern western country rockabilly. Western fashion, Y2K, tattoos, turquoise. Auction for her time coming soon."/>
+<meta name="twitter:description" content="Southern western country rockabilly. Calendar for time slots. Rates stay $X until locked."/>
 <meta name="twitter:image" content="https://nattymctatty.wtf/media/tiktok/hero-avatar.jpg"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -30,7 +29,6 @@
 }
 *{box-sizing:border-box} html{scroll-behavior:smooth}
 body{margin:0;font-family:"IBM Plex Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
-.font-display{font-family:Outfit,system-ui,sans-serif}
 a{color:var(--turq);text-decoration:none} a:hover{color:var(--gold)}
 .wrap{width:min(1120px,92vw);margin:0 auto}
 .top{position:sticky;top:0;z-index:40;backdrop-filter:blur(10px);background:rgba(12,9,8,.86);border-bottom:1px solid var(--line)}
@@ -75,11 +73,29 @@ h2{font-family:Outfit,sans-serif;font-size:clamp(1.5rem,3vw,2rem);font-weight:80
 .panel h3{font-family:Outfit,sans-serif;margin:0 0 .55rem;color:var(--gold);font-size:1rem;letter-spacing:.06em;text-transform:uppercase}
 .chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.85rem}
 .chip{border:1px solid var(--line);border-radius:999px;padding:.35rem .7rem;font-size:.75rem;color:var(--ink);background:rgba(226,180,74,.06)}
-.auction-grid{display:grid;gap:.85rem}
-@media(min-width:720px){.auction-grid{grid-template-columns:repeat(3,1fr)}}
-.auction{position:relative;overflow:hidden}
-.auction::after{content:"COMING SOON";position:absolute;top:1rem;right:-1.2rem;transform:rotate(18deg);background:var(--rose);color:#fff;font-family:Outfit,sans-serif;font-size:.65rem;font-weight:800;letter-spacing:.12em;padding:.35rem 1.6rem}
+.book-grid{display:grid;gap:1.1rem}
+@media(min-width:900px){.book-grid{grid-template-columns:1.15fr .85fr;align-items:start}}
+.cal-head{display:flex;align-items:center;justify-content:space-between;gap:.6rem;margin-bottom:.85rem}
+.cal-head h3{margin:0}
+.cal-nav{display:flex;gap:.4rem}
+.cal-nav button{background:transparent;border:1px solid var(--line);color:var(--gold);border-radius:999px;width:2.1rem;height:2.1rem;cursor:pointer;font-weight:800}
+.cal-week{display:grid;grid-template-columns:repeat(7,1fr);gap:.3rem;margin-bottom:.35rem;color:var(--muted);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-align:center}
+.cal-days{display:grid;grid-template-columns:repeat(7,1fr);gap:.3rem}
+.day{min-height:3.3rem;border:1px solid var(--line);border-radius:10px;padding:.3rem .25rem;background:#120e0c;font-size:.78rem}
+.day.empty{border-color:transparent;background:transparent}
+.day .n{display:block;font-weight:700;color:var(--ink)}
+.day.available{border-color:rgba(46,196,182,.55);background:rgba(46,196,182,.08);cursor:pointer}
+.day.hold{border-color:rgba(226,180,74,.5);background:rgba(226,180,74,.08);cursor:pointer}
+.day.booked{border-color:rgba(196,92,72,.45);background:rgba(196,92,72,.1);opacity:.8}
+.day .mark{display:block;font-size:.62rem;color:var(--muted);letter-spacing:.02em}
+.day.sel{outline:2px solid var(--gold)}
+.legend{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:.8rem;font-size:.75rem;color:var(--muted)}
+.dot{width:.65rem;height:.65rem;border-radius:50%;display:inline-block;margin-right:.3rem;vertical-align:middle}
 .price{font-family:Outfit,sans-serif;color:var(--turq);font-weight:800;font-size:1.15rem;margin:.4rem 0}
+.rate-row{display:flex;justify-content:space-between;gap:.7rem;align-items:baseline;border-bottom:1px solid var(--line);padding:.55rem 0}
+.slider-wrap{margin:1rem 0 .4rem}
+input[type=range]{width:100%;accent-color:var(--gold)}
+.tiny{color:var(--muted);font-size:.82rem;margin:0}
 .contact{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
 footer{padding:2rem 0 3rem;color:var(--muted);font-size:.82rem;text-align:center}
 .stripe{height:10px;background:repeating-linear-gradient(135deg,var(--gold) 0 12px,#111 12px 24px);box-shadow:0 2px 12px rgba(226,180,74,.2)}
@@ -87,7 +103,7 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.82rem;text-align:center
 #lightbox.open{display:flex}
 #lightbox .box{width:min(920px,96vw);max-height:92vh;background:var(--bg2);border:1px solid var(--line);border-radius:16px;overflow:auto;position:relative}
 #lightbox .close{position:absolute;top:.6rem;right:.7rem;z-index:2;background:rgba(0,0,0,.6);border:1px solid var(--line);color:var(--ink);border-radius:999px;width:2.2rem;height:2.2rem;cursor:pointer;font-size:1.1rem}
-#lightbox media-host,#lightbox .media-host{background:#000}
+#lightbox .media-host{background:#000}
 #lightbox img,#lightbox video{display:block;width:100%;max-height:70vh;object-fit:contain;background:#000}
 #lightbox .lb-cap{padding:1rem 1.1rem 1.3rem;color:var(--muted);font-size:.9rem}
 </style>
@@ -99,11 +115,10 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.82rem;text-align:center
   <nav class="nav" aria-label="Primary">
     <a href="#gallery">Gallery</a>
     <a href="#about">About</a>
-    <a href="#auction">Auction</a>
+    <a href="#book">Book</a>
     <a href="#contact">Contact</a>
   </nav>
 </div></header>
-
 <section class="hero"><div class="wrap hero-grid">
   <img class="avatar" src="media/tiktok/hero-avatar.jpg" alt="Natty McTatty" width="220" height="220"/>
   <div>
@@ -117,22 +132,21 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.82rem;text-align:center
     </div>
     <div class="btn-row">
       <a class="btn" href="#gallery">Watch the grid</a>
+      <a class="btn ghost" href="#book">See calendar</a>
       <a class="btn ghost" href="https://www.tiktok.com/@nattymctatty1981" target="_blank" rel="noopener">TikTok</a>
     </div>
   </div>
 </div></section>
-
 <section id="gallery"><div class="wrap">
   <h2>Gallery</h2>
   <p class="sub">TikTok cuts plus the Natty GrokBot album — tap any card to open the lightbox.</p>
   <div class="grid" id="gallery-grid"></div>
 </div></section>
-
 <section id="about"><div class="wrap about-grid">
   <div class="panel">
     <h3>Who she is</h3>
-    <p>Natty McTatty is western fashion with teeth — <b style="color:var(--gold)">green eyes</b>, sharp face, turquoise jewelry, and ink that doesn’t apologize. Signature <b style="color:var(--gold)">right-shoulder rose</b>. Sleeve details. Bicep, stomach, forearm. The look is southern country rockabilly badass, Y2K closet still winning, silly mama on a mission.</p>
-    <p style="margin-bottom:0;color:var(--muted)">Creator lock: asset <b style="color:var(--gold)">natalie_rebel</b> — tattoos stay asymmetrical (never flip), protect arms and abdomen in motion work. FaceID + OpenPose + Canny stack; ASUKA-II for color.</p>
+    <p>Natty McTatty is western fashion with teeth — <b style="color:var(--gold)">green eyes</b>, sharp face, turquoise jewelry, and ink that doesn’t apologize. Signature <b style="color:var(--gold)">right-shoulder rose</b>.</p>
+    <p style="margin-bottom:0;color:var(--muted)">Creator lock: asset <b style="color:var(--gold)">natalie_rebel</b>.</p>
     <div class="chips">
       <span class="chip">Western fashion</span>
       <span class="chip">Y2K</span>
@@ -146,32 +160,53 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.82rem;text-align:center
   <div class="panel">
     <h3>Bio</h3>
     <p style="font-size:1.05rem;margin:0 0 .8rem">Western Fashion 🤠 Y2K 🍒 Silly Mama<br/>Goal: retire hubby 😍</p>
-    <p style="margin:0;color:var(--muted)">Part of the MyAmerica.WTF family. Built with Outfit + IBM Plex Sans — same type stack as the mothership.</p>
+    <p style="margin:0;color:var(--muted)">Part of the MyAmerica.WTF family.</p>
   </div>
 </div></section>
-
-<section id="auction"><div class="wrap">
-  <h2>Auction for Her Time</h2>
-  <p class="sub">UI shell only — real bidding lands later. For now, the vibe.</p>
-  <div class="auction-grid">
-    <div class="panel auction">
-      <h3>60-min video hang</h3>
-      <p class="price">Opens soon</p>
-      <p style="margin:0;color:var(--muted);font-size:.9rem">Private shoot energy. Western fit check + stories.</p>
+<section id="book"><div class="wrap">
+  <h2>Book her time</h2>
+  <p class="sub" id="book-sub">Time slots available. Upcoming months. See calendar for details. Auction is off. Prices are $X until Natty and Zay lock them.</p>
+  <div class="book-grid">
+    <div class="panel">
+      <div class="cal-head">
+        <h3 id="cal-title">Calendar</h3>
+        <div class="cal-nav">
+          <button type="button" id="cal-prev" aria-label="Previous month">‹</button>
+          <button type="button" id="cal-next" aria-label="Next month">›</button>
+        </div>
+      </div>
+      <div class="cal-week"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+      <div class="cal-days" id="cal-days"></div>
+      <div class="legend">
+        <span><i class="dot" style="background:#2ec4b6"></i>Available</span>
+        <span><i class="dot" style="background:#e2b44a"></i>Hold</span>
+        <span><i class="dot" style="background:#c45c48"></i>Off / booked</span>
+      </div>
+      <p class="tiny" id="cal-detail" style="margin-top:.9rem">Tap a marked day. Empty days are not offered yet.</p>
     </div>
-    <div class="panel auction">
-      <h3>Custom TikTok</h3>
-      <p class="price">Opens soon</p>
-      <p style="margin:0;color:var(--muted);font-size:.9rem">She wears it. She films it. Your brand or your chaos.</p>
-    </div>
-    <div class="panel auction">
-      <h3>Day-rate collab</h3>
-      <p class="price">Opens soon</p>
-      <p style="margin:0;color:var(--muted);font-size:.9rem">Full-day on-camera. Rockabilly badass, clocked in.</p>
+    <div class="panel">
+      <h3>Video timing</h3>
+      <p class="tiny">Room representation / brand representation.</p>
+      <div class="slider-wrap">
+        <input type="range" id="min-range" min="1" max="10" value="1"/>
+      </div>
+      <p class="price" id="min-readout">1 minute — $X</p>
+      <p class="tiny" id="min-blurb">Slide 1 to 10 minutes. Dollar amount stays $X until research lands.</p>
+      <h3 style="margin-top:1.3rem">Add-ons</h3>
+      <div id="addons"></div>
+      <h3 style="margin-top:1.3rem">Weekly videos</h3>
+      <div id="weekly"></div>
+      <div class="rate-row" id="exclusive-row">
+        <div>
+          <strong>Exclusive week</strong>
+          <div class="tiny">No other shoutouts. No other products.</div>
+        </div>
+        <div class="price" style="margin:0">$X</div>
+      </div>
+      <p class="tiny" style="margin-top:.9rem">No pay button. Mail natalie@nattymctatty.wtf after you look at the calendar.</p>
     </div>
   </div>
 </div></section>
-
 <section id="contact"><div class="wrap">
   <h2>Contact</h2>
   <p class="sub">Bookings, collabs, and chaos.</p>
@@ -180,12 +215,10 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.82rem;text-align:center
     <a class="btn ghost" href="https://www.tiktok.com/@nattymctatty1981" target="_blank" rel="noopener">TikTok @nattymctatty1981</a>
   </div>
 </div></section>
-
 <footer><div class="wrap">
   Natty McTatty · nattymctatty.wtf · MyAmerica family<br/>
-  Fonts: Outfit + IBM Plex Sans.
+  Rates are placeholders. Not a live checkout.
 </div></footer>
-
 <div id="lightbox" role="dialog" aria-modal="true">
   <div class="box">
     <button class="close" type="button" aria-label="Close">×</button>
@@ -193,25 +226,23 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.82rem;text-align:center
     <div class="lb-cap" id="lb-cap"></div>
   </div>
 </div>
-
 <script>
+let BOOK = null;
+let view = new Date(2026, 9, 1);
 async function boot(){
   const res = await fetch('media/manifest.json');
   const data = await res.json();
   const grid = document.getElementById('gallery-grid');
-  data.gallery.forEach((item,i)=>{
+  data.gallery.forEach((item)=>{
     const el = document.createElement('article');
     el.className = 'card';
-    el.innerHTML = `
-      <div class="thumb">
-        <img src="${item.thumb || item.src}" alt="" loading="lazy"/>
-        <span class="badge">${item.source==='photos'?'Album':'TikTok'}</span>
-        ${item.type==='video'?'<span class="play">▶</span>':''}
-      </div>
-      <div class="cap">${item.caption || 'Natty McTatty'}</div>`;
+    el.innerHTML = `<div class="thumb"><img src="${item.thumb || item.src}" alt="" loading="lazy"/><span class="badge">${item.source==='photos'?'Album':'TikTok'}</span>${item.type==='video'?'<span class="play">\u25b6</span>':''}</div><div class="cap">${item.caption || 'Natty McTatty'}</div>`;
     el.addEventListener('click',()=>openLB(item));
     grid.appendChild(el);
   });
+  try { BOOK = await (await fetch('bookings.json')).json(); }
+  catch (err) { BOOK = {slots:[], rates:{video_minutes:{min:1,max:10,price_each:'$X'}, addons:[], weekly_videos:[], exclusive_week:{name:'Exclusive week', price:'$X', blurb:''}}}; }
+  paintBook();
 }
 function openLB(item){
   const lb = document.getElementById('lightbox');
@@ -231,15 +262,90 @@ function openLB(item){
   lb.classList.add('open');
 }
 document.querySelector('#lightbox .close').onclick = ()=>{
-  const lb = document.getElementById('lightbox');
-  lb.classList.remove('open');
+  document.getElementById('lightbox').classList.remove('open');
   document.getElementById('lb-media').innerHTML = '';
 };
 document.getElementById('lightbox').addEventListener('click',e=>{
   if(e.target.id==='lightbox') document.querySelector('#lightbox .close').click();
 });
+function ymd(d){
+  const z = n => String(n).padStart(2,'0');
+  return d.getFullYear()+'-'+z(d.getMonth()+1)+'-'+z(d.getDate());
+}
+function slotMap(){
+  const m = {};
+  (BOOK.slots||[]).forEach(s => { m[s.date] = s; });
+  return m;
+}
+function paintCal(){
+  document.getElementById('cal-title').textContent = view.toLocaleString('en-US',{month:'long', year:'numeric'});
+  const first = new Date(view.getFullYear(), view.getMonth(), 1);
+  const startPad = first.getDay();
+  const daysIn = new Date(view.getFullYear(), view.getMonth()+1, 0).getDate();
+  const host = document.getElementById('cal-days');
+  host.innerHTML = '';
+  const map = slotMap();
+  for(let i=0;i<startPad;i++){
+    const e = document.createElement('div');
+    e.className = 'day empty';
+    host.appendChild(e);
+  }
+  for(let d=1; d<=daysIn; d++){
+    const dt = new Date(view.getFullYear(), view.getMonth(), d);
+    const key = ymd(dt);
+    const slot = map[key];
+    const el = document.createElement('button');
+    el.type = 'button';
+    el.className = 'day' + (slot ? ' '+slot.status : '');
+    el.innerHTML = '<span class="n">'+d+'</span>' + (slot ? '<span class="mark">'+(slot.label||slot.status)+'</span>' : '');
+    if(slot){
+      el.addEventListener('click',()=>{
+        host.querySelectorAll('.day').forEach(x=>x.classList.remove('sel'));
+        el.classList.add('sel');
+        document.getElementById('cal-detail').textContent = key + ' · ' + (slot.label||slot.status) + (slot.notes ? ' — '+slot.notes : '') + '. Mail natalie@nattymctatty.wtf.';
+      });
+    }
+    host.appendChild(el);
+  }
+}
+function paintRates(){
+  const r = BOOK.rates || {};
+  const vm = r.video_minutes || {min:1,max:10,price_each:'$X'};
+  const range = document.getElementById('min-range');
+  range.min = vm.min || 1;
+  range.max = vm.max || 10;
+  const paintMin = ()=>{
+    const n = Number(range.value);
+    document.getElementById('min-readout').textContent = n + ' minute' + (n===1?'':'s') + ' — ' + (vm.price_each||'$X');
+  };
+  range.oninput = paintMin;
+  paintMin();
+  if(vm.blurb) document.getElementById('min-blurb').textContent = vm.blurb;
+  const addons = document.getElementById('addons');
+  addons.innerHTML = '';
+  (r.addons||[]).forEach(a=>{
+    const row = document.createElement('div');
+    row.className = 'rate-row';
+    row.innerHTML = '<div><strong>'+a.name+'</strong><div class="tiny">'+(a.blurb||'')+'</div></div><div class="price" style="margin:0">'+(a.price||'$X')+'</div>';
+    addons.appendChild(row);
+  });
+  const weekly = document.getElementById('weekly');
+  weekly.innerHTML = '';
+  (r.weekly_videos||[]).forEach(w=>{
+    const row = document.createElement('div');
+    row.className = 'rate-row';
+    row.innerHTML = '<div><strong>'+w.name+'</strong></div><div class="price" style="margin:0">'+(w.price||'$X')+'</div>';
+    weekly.appendChild(row);
+  });
+  const ex = r.exclusive_week || {};
+  document.getElementById('exclusive-row').innerHTML = '<div><strong>'+(ex.name||'Exclusive week')+'</strong><div class="tiny">'+(ex.blurb||'')+'</div></div><div class="price" style="margin:0">'+(ex.price||'$X')+'</div>';
+  if(BOOK.subhead) document.getElementById('book-sub').textContent = BOOK.subhead;
+}
+function paintBook(){ paintCal(); paintRates(); }
+document.getElementById('cal-prev').onclick = ()=>{ view = new Date(view.getFullYear(), view.getMonth()-1, 1); paintCal(); };
+document.getElementById('cal-next').onclick = ()=>{ view = new Date(view.getFullYear(), view.getMonth()+1, 1); paintCal(); };
 boot().catch(err=>{
-  document.getElementById('gallery-grid').innerHTML = '<p style="color:#c45c48">Could not load media/manifest.json — open this folder as a local site (or via a tiny static server).</p>';
+  document.getElementById('gallery-grid').innerHTML = '<p style="color:#c45c48">Could not load media/manifest.json.</p>';
   console.error(err);
 });
 </script>
