@@ -4,24 +4,33 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-<meta name="cache-bust" content="2026-09-19T21:50Z-comps-up"/>
+<meta name="cache-bust" content="2026-09-19T21:52Z-comps-live"/>
 <title>Natty McTatty — nattymctatty.wtf</title>
 <meta name="theme-color" content="#050303"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{background:#050303}
-.stage{position:relative;width:min(100vw,430px);margin:0 auto;background:#000}
+.stage{position:relative;width:min(100vw,430px);margin:0 auto;background:#000;min-height:100vh}
 .stage img{display:block;width:100%;height:auto}
 .hot{position:absolute;z-index:2;display:block}
 </style>
 </head>
 <body>
 <main class="stage">
-<img src="media/mobile/front.jpg" alt="Natty McTatty home"/>
+<img id="shot" alt="Natty McTatty — nattymctatty.wtf"/>
 <a class="hot" href="index.html" style="left:2%;top:18.6%;width:10%;height:2.3%" aria-label="Home"></a>
 <a class="hot" href="calendar.html" style="left:61%;top:18.6%;width:12%;height:2.3%" aria-label="Calendar"></a>
 <a class="hot" href="calendar.html" style="left:74%;top:18.3%;width:23%;height:2.7%" aria-label="Let's work together"></a>
 <a class="hot" href="calendar.html" style="left:23%;top:82.1%;width:54%;height:5.6%" aria-label="See calendar"></a>
 </main>
+<script>
+Promise.all([
+fetch('media/mobile/front.0.txt').then(r=>r.text()),
+fetch('media/mobile/front.1.txt').then(r=>r.text()),
+fetch('media/mobile/front.2.txt').then(r=>r.text()),
+fetch('media/mobile/front.3.txt').then(r=>r.text()),
+fetch('media/mobile/front.4.txt').then(r=>r.text())
+]).then(function(p){document.getElementById('shot').src='data:image/jpeg;base64,'+p.join('');}).catch(function(){document.getElementById('shot').alt='image failed to load';});
+</script>
 </body>
 </html>
