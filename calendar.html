@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-<meta name="cache-bust" content="2026-09-19T21:52Z-comps-live"/>
+<meta name="cache-bust" content="2026-09-19T21:54Z-two-chunk"/>
 <title>Booking Calendar — Natty McTatty</title>
 <meta name="theme-color" content="#050303"/>
 <style>
@@ -17,7 +17,7 @@ html,body{background:#050303}
 </head>
 <body>
 <main class="stage">
-<img id="shot" alt="Booking Calendar — Natty McTatty"/>
+<img id="shot" alt="Natty McTatty booking calendar"/>
 <a class="hot" href="index.html" style="left:3%;top:1.0%;width:13%;height:2.5%" aria-label="Home"></a>
 <a class="hot" href="calendar.html" style="left:57%;top:1.0%;width:15%;height:2.5%" aria-label="Calendar"></a>
 <a class="hot" href="calendar.html" style="left:73%;top:0.8%;width:24%;height:2.9%" aria-label="Let's work together"></a>
@@ -25,11 +25,8 @@ html,body{background:#050303}
 <script>
 Promise.all([
 fetch('media/mobile/calendar.0.txt').then(r=>r.text()),
-fetch('media/mobile/calendar.1.txt').then(r=>r.text()),
-fetch('media/mobile/calendar.2.txt').then(r=>r.text()),
-fetch('media/mobile/calendar.3.txt').then(r=>r.text()),
-fetch('media/mobile/calendar.4.txt').then(r=>r.text())
-]).then(function(p){document.getElementById('shot').src='data:image/jpeg;base64,'+p.join('');}).catch(function(){document.getElementById('shot').alt='image failed to load';});
+fetch('media/mobile/calendar.1.txt').then(r=>r.text())
+]).then(function(p){document.getElementById('shot').src='data:image/jpeg;base64,'+p.join('');});
 </script>
 </body>
 </html>
